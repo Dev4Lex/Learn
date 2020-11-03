@@ -1,6 +1,6 @@
 package mypackage; //класс находится в данном пакете
 
-public class TestClass {   //имена у классов всегда с большой буквы; каждое новое слово с большой буквы
+public class LearnJava1 {   //имена у классов всегда с большой буквы; каждое новое слово с большой буквы
     public static void main(String[] args) {   //обязательный метод; точка входа в программу
         System.out.print("Hello world! ");    //Вывод на экран фразы Hello world!
         System.out.println("It's my first program"); //print - курсор не переходит на следующую строку;
@@ -50,6 +50,45 @@ public class TestClass {   //имена у классов всегда с бол
         //названия переменных начинаются с маленькой буквы; последующие слова идут с большой
         String personName;
         int age;
+
+        //Массивы
+        String[] names;
+        names = new String[3]; //выделение области памяти для хранения массива длиной 3
+
+        String[] name = new String[3]; //краткая запись
+        int[] arr = new int[10]; //можем хранить 10 элементов типа int
+
+        name[0] = "Vasya"; //индексация элементов в массиве начинается с 0
+        name[1] = "Petya";
+        name[2] = "Vanya";
+        System.out.println(name[0]); //вывод первого элемента массива
+        System.out.println(name[2]); //вывод третьего элемента массива
+
+        arr[3] = 15; //указали значение 15 четвертому элементу массива
+        arr[3] = 10;
+        System.out.println(arr[3]);
+
+        int[] array = {15,10,100, 9, 44}; //создание массива из 3х элементов и сразу указали значения
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        System.out.println(array[2]);
+
+        for (int i = 0; i<5;i++){
+            System.out.println(array[i]);      //цикл вывода массива из 5 элементов: c 0 по 4
+        }
+
+        int[] arr2 = new int[15];
+        for (int j = 0;j<15;j++){
+            arr2[j] = j * 10;                 //цикл вывода массива из 15 элементов: с 0 по 14 + умножение их на 10
+            System.out.println(arr2[j]);
+        }
+
+        System.out.println(arr2.length);   //размер массива
+        System.out.println(arr2[arr2.length - 1]); //вывод последнего элемента массива
+
+
+
+
 
     }
 }
