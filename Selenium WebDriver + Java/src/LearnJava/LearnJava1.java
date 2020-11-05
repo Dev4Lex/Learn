@@ -1,4 +1,4 @@
-package mypackage; //класс находится в данном пакете
+package LearnJava; //класс находится в данном пакете
 
 public class LearnJava1 {   //имена у классов всегда с большой буквы; каждое новое слово с большой буквы
     public static void main(String[] args) {   //обязательный метод; точка входа в программу
