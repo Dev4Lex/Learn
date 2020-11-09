@@ -24,6 +24,18 @@ public class LearnJava12 {
         car2.drive(100);
         car3.drive(150);
 
+        System.out.println(Car.var); //обращение к статичной переменной var класса Car
+        Car.var = 100; //присвоение значения 100 переменной var класса Car
+        System.out.println(car1.var); //вывод значения объекта класса Car
+        System.out.println(car2.var);
+        System.out.println(car3.var);
+
+        Car.method();
+        String.format("New %s string", "string");
+
+
+
+
         Car car4 = new Car("Black");
         System.out.println("Car color is: " + car4.color);
 
