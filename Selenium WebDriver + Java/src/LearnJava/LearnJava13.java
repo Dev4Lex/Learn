@@ -2,7 +2,7 @@ package LearnJava;
 
 public class LearnJava13 {
     public static void main(String[] args) {
-        //Принцип ООП - Наследование
+        //Принципы ООП - Наследование, Инкапсуляция
         Cat cat = new Cat();
         Dog dog = new Dog();
 
@@ -20,5 +20,12 @@ public class LearnJava13 {
 
         System.out.println("Cat name is: " +cat.name);
         System.out.println("Dog name is: "+ dog.name);
+
+        dog.var = 10;
+
+        System.out.println(dog.getWeight()); //получения значения переменной weight через метод getter
+
+        dog.sound();
+        cat.sound();
     }
 }
