@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b26f062b-6346-4f4b-b9f7-50d16f9bc0fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainClass1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kYNeXGMZQJ9ku9LPZ9LyxpxxMY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
+  </component>
+  <component name="RunManager" selected="Application.MainClass1">
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainClass" />
+      <module name="testselenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClass1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainClass1" />
+      <module name="testselenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainClass1" />
+        <item itemvalue="Application.MainClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b26f062b-6346-4f4b-b9f7-50d16f9bc0fa" name="Default Changelist" comment="" />
+      <created>1605873661299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605873661299</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1347" height="231" key="GridCell.Tab.0.bottom" timestamp="1605889817219">
+      <screen x="0" y="23" width="1391" height="877" />
+    </state>
+    <state width="1347" height="231" key="GridCell.Tab.0.bottom/-1600.-50.1600.877/0.23.1391.877@0.23.1391.877" timestamp="1605889817219" />
+    <state width="1347" height="231" key="GridCell.Tab.0.bottom/-1600.-50.1600.877/0.23.1393.877@0.23.1393.877" timestamp="1605882905174" />
+    <state width="1347" height="231" key="GridCell.Tab.0.bottom/-1600.-50.1600.877/0.23.1394.877@0.23.1394.877" timestamp="1605879454865" />
+    <state width="1347" height="231" key="GridCell.Tab.0.center" timestamp="1605889817218">
+      <screen x="0" y="23" width="1391" height="877" />
+    </state>
+    <state width="1347" height="231" key="GridCell.Tab.0.center/-1600.-50.1600.877/0.23.1391.877@0.23.1391.877" timestamp="1605889817218" />
+    <state width="1347" height="231" key="GridCell.Tab.0.center/-1600.-50.1600.877/0.23.1393.877@0.23.1393.877" timestamp="1605882905171" />
+    <state width="1347" height="231" key="GridCell.Tab.0.center/-1600.-50.1600.877/0.23.1394.877@0.23.1394.877" timestamp="1605879454863" />
+    <state width="1347" height="231" key="GridCell.Tab.0.left" timestamp="1605889817218">
+      <screen x="0" y="23" width="1391" height="877" />
+    </state>
+    <state width="1347" height="231" key="GridCell.Tab.0.left/-1600.-50.1600.877/0.23.1391.877@0.23.1391.877" timestamp="1605889817218" />
+    <state width="1347" height="231" key="GridCell.Tab.0.left/-1600.-50.1600.877/0.23.1393.877@0.23.1393.877" timestamp="1605882905170" />
+    <state width="1347" height="231" key="GridCell.Tab.0.left/-1600.-50.1600.877/0.23.1394.877@0.23.1394.877" timestamp="1605879454861" />
+    <state width="1347" height="231" key="GridCell.Tab.0.right" timestamp="1605889817219">
+      <screen x="0" y="23" width="1391" height="877" />
+    </state>
+    <state width="1347" height="231" key="GridCell.Tab.0.right/-1600.-50.1600.877/0.23.1391.877@0.23.1391.877" timestamp="1605889817219" />
+    <state width="1347" height="231" key="GridCell.Tab.0.right/-1600.-50.1600.877/0.23.1393.877@0.23.1393.877" timestamp="1605882905172" />
+    <state width="1347" height="231" key="GridCell.Tab.0.right/-1600.-50.1600.877/0.23.1394.877@0.23.1394.877" timestamp="1605879454864" />
+    <state x="203" y="100" key="SettingsEditor" timestamp="1605873787974">
+      <screen x="0" y="23" width="1393" height="877" />
+    </state>
+    <state x="203" y="100" key="SettingsEditor/-1600.-50.1600.877/0.23.1393.877@0.23.1393.877" timestamp="1605873787974" />
+  </component>
+</project>
