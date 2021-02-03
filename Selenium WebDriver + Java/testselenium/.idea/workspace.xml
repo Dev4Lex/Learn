@@ -54,27 +54,30 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainClass3">
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainClass" />
+  <component name="RunManager" selected="Application.TextFields">
+    <configuration name="Buttons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Buttons" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainClass1" />
+    <configuration name="FindElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindElements" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainClass2" />
+    <configuration name="FirstSteps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FirstSteps" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,12 +90,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TextFields" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TextFields" />
+      <module name="testselenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextFields" />
         <item itemvalue="Application.MainClass3" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.MainClass2" />
-        <item itemvalue="Application.MainClass1" />
+        <item itemvalue="Application.FirstSteps" />
+        <item itemvalue="Application.Buttons" />
+        <item itemvalue="Application.FindElements" />
       </list>
     </recent_temporary>
   </component>
@@ -118,5 +129,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>

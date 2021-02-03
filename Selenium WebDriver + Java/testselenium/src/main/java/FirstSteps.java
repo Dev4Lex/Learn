@@ -4,7 +4,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainClass {
+public class FirstSteps {
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/geckodriver"); //путь до драйвера
 
