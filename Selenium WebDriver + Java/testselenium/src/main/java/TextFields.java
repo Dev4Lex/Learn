@@ -24,9 +24,11 @@ public class TextFields {
         driver.findElement(By.xpath("//div[@id='searchText']/input")).clear(); //очистка поля
 
         driver.get("https://github.com");
-        driver.findElement(By.xpath(".//*[@id='user[login]']")).sendKeys("testusername");
-        driver.findElement(By.xpath(".//*[@id='user[password]']")).sendKeys("testpass");WebElement button = driver.findElement(By.xpath("//button[@class = 'btn-mktg btn-primary-mktg btn-large-mktg f4 btn-block my-3']"));
-        button.submit(); //метод нажатия на кнопку
+        driver.findElement(By.xpath("//a[@class = 'HeaderMenu-link no-underline mr-3']")).click();
+        driver.findElement(By.xpath(".//*[@id='login_field']")).sendKeys("testusername");
+        driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("testpass");
+        WebElement button2 = driver.findElement(By.xpath("//input[@class = 'btn btn-primary btn-block']"));
+        button2.submit(); //метод нажатия на кнопку
 //        driver.findElement(By.xpath("//a[@class='HeaderMenu-link no-underline mr-3']")).click();
 //
         driver.get("http://en-gb.facebook.com");
