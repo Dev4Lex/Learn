@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class MainClass3 {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "/Users/alexs/Desktop/git/Learn/testselenium/drivers/geckodriver"); //путь до драйвера
+        System.setProperty("webdriver.gecko.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/geckodriver"); //путь до драйвера
 
         WebDriver driver = new FirefoxDriver(); //инициализация драйвера
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание 10 секунд

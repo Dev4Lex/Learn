@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26f062b-6346-4f4b-b9f7-50d16f9bc0fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/testselenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b26f062b-6346-4f4b-b9f7-50d16f9bc0fa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1kYNeXGMZQJ9ku9LPZ9LyxpxxMY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -53,7 +50,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -92,9 +90,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainClass3" />
+        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.MainClass2" />
         <item itemvalue="Application.MainClass1" />
-        <item itemvalue="Application.MainClass" />
       </list>
     </recent_temporary>
   </component>
