@@ -51,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -61,16 +61,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextFields">
-    <configuration name="Buttons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Buttons" />
-      <module name="testselenium" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FindElements" />
+  <component name="RunManager" selected="Application.CheckboxRadiobutton">
+    <configuration name="CheckboxRadiobutton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CheckboxRadiobutton" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,6 +71,13 @@
     </configuration>
     <configuration name="FirstSteps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FirstSteps" />
+      <module name="testselenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Links" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Links" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckboxRadiobutton" />
+        <item itemvalue="Application.Links" />
         <item itemvalue="Application.TextFields" />
         <item itemvalue="Application.MainClass3" />
         <item itemvalue="Application.FirstSteps" />
-        <item itemvalue="Application.Buttons" />
-        <item itemvalue="Application.FindElements" />
       </list>
     </recent_temporary>
   </component>
@@ -134,6 +134,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
       <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
     </ignored-roots>
   </component>
 </project>
