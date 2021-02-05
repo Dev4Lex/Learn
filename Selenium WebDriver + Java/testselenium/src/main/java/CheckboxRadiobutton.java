@@ -22,12 +22,11 @@ public class CheckboxRadiobutton {
         driver.findElement(By.xpath("//a[text()='Стиральные и сушильные машины']")).click();
         driver.findElement(By.xpath("//a[text()='Стиральные машины']")).click();
 
-        //Выбираем бренды
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(0, window.innerHeight)", ""); //Скролл вниз
 
+        //Выбираем бренды
         driver.findElement(By.xpath("//span[text()='Понятно']")).click();
-
         selectCheckBox("Производитель ATLANT"); //выделяем чекбоксы
         selectCheckBox("Производитель Beko");
         selectCheckBox("Производитель Candy");
@@ -41,7 +40,6 @@ public class CheckboxRadiobutton {
         driver.findElement(By.xpath("//span[text()='Самовывоз']")).click();
         System.out.println(driver.findElement(By.xpath("//input[@id='offer-shipping_pickup']")).isSelected()); //проверка выбора после
         driver.findElement(By.xpath("//span[text()='Доставка курьером']")).click();
-
 
         //driver.quit(); //завершение работы драйвера
 
