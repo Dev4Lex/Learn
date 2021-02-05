@@ -62,15 +62,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.CheckboxRadiobutton">
-    <configuration name="CheckboxRadiobutton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CheckboxRadiobutton" />
+    <configuration name="Buttons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Buttons" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSteps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FirstSteps" />
+    <configuration name="CheckboxRadiobutton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CheckboxRadiobutton" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,10 +100,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CheckboxRadiobutton" />
+        <item itemvalue="Application.Buttons" />
         <item itemvalue="Application.Links" />
         <item itemvalue="Application.TextFields" />
         <item itemvalue="Application.MainClass3" />
-        <item itemvalue="Application.FirstSteps" />
       </list>
     </recent_temporary>
   </component>

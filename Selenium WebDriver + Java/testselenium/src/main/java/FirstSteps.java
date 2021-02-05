@@ -1,14 +1,15 @@
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//Создание тестового класса и запуск браузера
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver; //импорт для работы с драйвером браузера Chrome
 import java.util.concurrent.TimeUnit;
+//import org.openqa.selenium.firefox.FirefoxDriver;  //импорт для работы с драйвером браузера Firefox
 
 public class FirstSteps {
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/geckodriver"); //путь до драйвера
+        System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/chromedriver"); //путь до драйвера
 
-        WebDriver driver = new FirefoxDriver(); //инициализация драйвера
+        WebDriver driver = new ChromeDriver(); //инициализация драйвера
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание 10 секунд
 

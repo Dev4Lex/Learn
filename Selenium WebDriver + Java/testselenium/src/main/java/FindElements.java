@@ -2,17 +2,16 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 
 public class FindElements {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/geckodriver"); //путь до драйвера
+        System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/chromedriver"); //путь до драйвера
 
-        WebDriver driver = new FirefoxDriver(); //инициализация драйвера
+        WebDriver driver = new ChromeDriver(); //инициализация драйвера
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание 10 секунд
         driver.manage().window().maximize(); //окно на весь экран
 
