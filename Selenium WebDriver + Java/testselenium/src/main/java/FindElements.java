@@ -1,31 +1,45 @@
-//Поиск элементов
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//Поиск списка элементов
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 public class FindElements {
+
+    static WebDriver driver;
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/chromedriver"); //путь до драйвера
 
-        WebDriver driver = new ChromeDriver(); //инициализация драйвера
+        driver = new ChromeDriver(); //инициализация драйвера
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание 10 секунд
         driver.manage().window().maximize(); //окно на весь экран
 
-        driver.get("http://en.wikipedia.org");
+        driver.get("http://market.yandex.ru/");
 
-        WebElement link = driver.findElement(By.linkText("Log in")); //поиск по тексту ссылки
-        WebElement link2 = driver.findElement(By.partialLinkText("Donate")); //поиск ссылки по части текста ссылки
-        WebElement searchField = driver.findElement(By.name("search")); //поиск по значению атрибута name
-        WebElement searchButton = driver.findElement(By.className("searchButton")); //поиск по имени класса
-        WebElement li = driver.findElement(By.id("ca-viewsource")); //поиск по значению id элкмента
-        WebElement input = driver.findElement(By.tagName("input")); //поиск по названию html-тега
-        WebElement element = driver.findElement(By.cssSelector("div#SimpleSearch input#searchButton")); // поиск по CSS-селектору
-        WebElement logo = driver.findElement(By.xpath("//div[@id='mw-panel']/div[@id='p-logo']//a")); //поиск по XPath
+        //Идем по каталогу до Стиральных машин
+        driver.findElement(By.xpath("//span[text()='Понятно']")).click();
+        driver.findElement(By.xpath("//a[@href='/catalog--bytovaia-tekhnika/54419']")).click();
+        driver.findElement(By.xpath("//a[text()='Стиральные и сушильные машины']")).click();
+        driver.findElement(By.xpath("//a[text()='Стиральные машины']")).click();
 
-        driver.quit();
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0, window.innerHeight)", ""); //Скролл вниз
+        driver.findElement(By.xpath("//span[text()='Понятно']")).click();
+
+        List<WebElement> checkboxes = driver.findElements(By.xpath("//fieldset[@data-autotest-id='7893318']//input[@type='checkbox']/following-sibling::div/span"));
+
+        //checkboxes.get(3).click(); //клик по элементу с индексом 3
+
+        //Проверка соответствия количества чекбоксов
+        if (checkboxes.size() == 12) System.out.println("It's okay!");
+        else System.out.println("Fail!");
+
+        //Отметить все найденные чекбоксы
+        for(WebElement checkbox : checkboxes) {
+            checkbox.click();
+        }
     }
 }

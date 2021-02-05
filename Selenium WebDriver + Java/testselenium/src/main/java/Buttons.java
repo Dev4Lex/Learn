@@ -9,10 +9,12 @@ import java.util.concurrent.TimeUnit;
 
 public class Buttons {
 
+    static WebDriver driver;
+
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/Selenium WebDriver + Java/testselenium/drivers/chromedriver"); //путь до драйвера
 
-        WebDriver driver = new ChromeDriver(); //инициализация драйвера
+        driver = new ChromeDriver(); //инициализация драйвера
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание 10 секунд
         driver.manage().window().maximize(); //окно на весь экран
 
