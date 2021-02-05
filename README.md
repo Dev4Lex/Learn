@@ -1,5 +1,5 @@
 # Learn
-<br>#Java
+<br>#Java Core
 <br>#Selenium WebDriver
 <br>#JUnit
 <br>#TestNG
