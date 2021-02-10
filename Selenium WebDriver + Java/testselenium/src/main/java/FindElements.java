@@ -28,6 +28,7 @@ public class FindElements {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(0, window.innerHeight)", ""); //Скролл вниз
         driver.findElement(By.xpath("//span[text()='Понятно']")).click();
+        //driver.findElement(By.xpath("//legend[text()='Производитель']/following-sibling::footer/button[text()='Показать всё']")).click();
 
         List<WebElement> checkboxes = driver.findElements(By.xpath("//fieldset[@data-autotest-id='7893318']//input[@type='checkbox']/following-sibling::div/span"));
 

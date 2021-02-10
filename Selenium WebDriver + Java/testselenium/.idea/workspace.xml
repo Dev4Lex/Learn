@@ -61,14 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindElements">
-    <configuration name="Buttons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Buttons" />
-      <module name="testselenium" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ExplicitWait">
     <configuration name="CheckboxRadiobutton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CheckboxRadiobutton" />
       <module name="testselenium" />
@@ -83,6 +76,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExplicitWait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExplicitWait" />
+      <module name="testselenium" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FindElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindElements" />
       <module name="testselenium" />
@@ -90,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Links" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Links" />
+    <configuration name="Tables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tables" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExplicitWait" />
+        <item itemvalue="Application.Tables" />
         <item itemvalue="Application.FindElements" />
         <item itemvalue="Application.DropDownList" />
         <item itemvalue="Application.CheckboxRadiobutton" />
-        <item itemvalue="Application.Buttons" />
-        <item itemvalue="Application.Links" />
       </list>
     </recent_temporary>
   </component>
