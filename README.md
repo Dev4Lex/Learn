@@ -1,6 +1,6 @@
 # Learn
 <br>#Java Core
-<checkbox>Типы данных </checkbox>
+<label><input type="checkbox"/> описание</label>
 	<ul>
 		<checkbox>Типы данных </checkbox>
 		<li>Массивы </li>
