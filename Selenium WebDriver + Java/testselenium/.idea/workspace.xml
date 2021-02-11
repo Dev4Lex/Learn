@@ -61,37 +61,37 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExplicitWait">
-    <configuration name="CheckboxRadiobutton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CheckboxRadiobutton" />
+  <component name="RunManager" selected="Application.AvailabilityOfElements">
+    <configuration name="Alert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Alert" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropDownList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DropDownList" />
+    <configuration name="AvailabilityOfElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AvailabilityOfElements" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExplicitWait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExplicitWait" />
+    <configuration name="BrowserTabs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BrowserTabs" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FindElements" />
+    <configuration name="BrowserWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BrowserWindow" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tables" />
+    <configuration name="JavaScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaScript" />
       <module name="testselenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExplicitWait" />
-        <item itemvalue="Application.Tables" />
-        <item itemvalue="Application.FindElements" />
-        <item itemvalue="Application.DropDownList" />
-        <item itemvalue="Application.CheckboxRadiobutton" />
+        <item itemvalue="Application.AvailabilityOfElements" />
+        <item itemvalue="Application.BrowserTabs" />
+        <item itemvalue="Application.BrowserWindow" />
+        <item itemvalue="Application.Alert" />
+        <item itemvalue="Application.JavaScript" />
       </list>
     </recent_temporary>
   </component>
