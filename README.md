@@ -1,4 +1,4 @@
-# Learn
+# Learning progress
 <br>#Java Core
 	<ul>
 		<li>Типы данных </li>
