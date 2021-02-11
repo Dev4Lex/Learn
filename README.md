@@ -42,7 +42,7 @@
 		<li>Выполнение сложных действий</li>
 		<li>Выполнение Javascript</li>
 		<li>Работа с Alert</li>
-		<li>Работа с окнами браузера</li>
+		<li><a href="https://github.com/Dev4Lex/Learn/blob/main/Selenium%20WebDriver%20%2B%20Java/testselenium/src/main/java/BrowserTabs.java">Работа с окнами браузера</a></li>
 		<li>Работа с вкладками браузера</li>
 		<li>Проверка доступности элементов</li>
 		<li>Проверка наличия элемента</li>
