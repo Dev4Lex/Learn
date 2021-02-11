@@ -1,8 +1,7 @@
 # Learn
 <br>#Java Core
-<label><input type="checkbox"/> описание</label>
 	<ul>
-		<checkbox>Типы данных </checkbox>
+		<li>Типы данных </li>
 		<li>Массивы </li>
 		<li>Простые операции и логические операторы </li>
 		<li>Условия и множественный выбор</li>
