@@ -61,10 +61,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AvailabilityOfElements">
+  <component name="RunManager" selected="Application.Alert">
     <configuration name="Alert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Alert" />
-      <module name="testselenium" />
+      <module name="Selenium WebDriver" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,10 +101,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Alert" />
         <item itemvalue="Application.AvailabilityOfElements" />
         <item itemvalue="Application.BrowserTabs" />
         <item itemvalue="Application.BrowserWindow" />
-        <item itemvalue="Application.Alert" />
         <item itemvalue="Application.JavaScript" />
       </list>
     </recent_temporary>
