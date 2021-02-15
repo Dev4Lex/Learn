@@ -32,5 +32,18 @@ public class DataTypes {
         //Названия переменных начинаются с маленькой буквы; последующие слова идут с большой
         int personAge;
         int age;
+
+
+        //Ссылочные типы данных
+        class Human {
+            Human friend = new Human(); //в объекте хранится ссылка
+            Human mom;
+            Human dad;
+            Human car = null;
+        }
+
+        String text = new String("Hello");
+        //String text = "Hello"; Равнозначное написание
+
     }
 }
