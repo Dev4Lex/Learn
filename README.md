@@ -45,13 +45,20 @@
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserWindow.java">Работа с окнами браузера</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserTabs.java">Работа с вкладками браузера</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/AvailabilityOfElements.java">Проверка доступности элементов</a></li>
-		<li><a href="">Проверка наличия элемента</a></li>
-		<li><a href="">Имитация нажатия клавиш клавиатуры</a></li>
-		<li><a href="">Создание скриншотов с помощью Selenium WebDriver</a></li>
-		<li><a href="">Загрузка файлов</a></li>
-		<li><a href="">Запуск тестов в разных браузерах</a></li>
-		<li><a href="">Запуск тестов без открытия браузера</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ExistenceOfElements.java">Проверка наличия элемента</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SendKeys.java">Имитация нажатия клавиш клавиатуры</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/TakeScreenshot.java">Создание скриншотов с помощью Selenium WebDriver</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FileDownload.java">Загрузка файлов</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SomeBrowsers.java">Запуск тестов в разных браузерах</a></li>
+		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java">Запуск тестов без открытия браузера</a></li>
 	</ul>
+
+<br>#Page Object
+<ul>
+<li><a href="">Main Page</li>
+<li><a href="">Login Page</li>
+<li><a href="">Signup Page</li>
+</ul>	
 <br>#JUnit
 <br>#TestNG
 <br>#Selenide
