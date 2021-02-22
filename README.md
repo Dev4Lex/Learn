@@ -35,9 +35,9 @@ ____
 	</ul>
 <br>#Selenium WebDriver
 <ul>
-		<li>:white_check_mark:  <a href="">Основы XPath: синтаксис</a></li>
-		<li>:white_check_mark:  <a href="">Оси XPath</a></li>
-		<li>:white_check_mark:  <a href="">Функции XPath</a></li>
+		<li>:white_check_mark:  Основы XPath: синтаксис</li>
+		<li>:white_check_mark:  Оси XPath</li>
+		<li>:white_check_mark:  Функции XPath</li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Запуск браузера и базовые настройки</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Неявное ожидание Implicit Wait</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElement.java">Поиск элементов</a></li>
@@ -65,9 +65,9 @@ ____
 
 <br>#Page Object
 <ul>
-<li><a href="">Main Page</li>
-<li><a href="">Login Page</li>
-<li><a href="">Signup Page</li>
+<li>Main Page</li>
+<li>Login Page</li>
+<li>Signup Page</li>
 </ul>	
 <br>#JUnit
 <br>#TestNG
