@@ -1,75 +1,75 @@
 # RoadMap
 ____
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#java-core">Java Core</a>
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#webdriver">WebDriver
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#page-object">Page Object
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#junit">JUnit
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#testng">TestNG
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#selenide">Selenide
-<a href="https://github.com/Dev4Lex/Learn-Java-Selenium#jenkins">Jenkins
+-[Java Core](https://github.com/Dev4Lex/Learn-Java-Selenium#java-core)
+-[WebDriver](https://github.com/Dev4Lex/Learn-Java-Selenium#webdriver)
+-[Page Object](https://github.com/Dev4Lex/Learn-Java-Selenium#page-object)
+-[JUnit](https://github.com/Dev4Lex/Learn-Java-Selenium#junit)
+-[TestNG](https://github.com/Dev4Lex/Learn-Java-Selenium#testng)
+-[Selenide](https://github.com/Dev4Lex/Learn-Java-Selenium#selenide)
+-[Jenkins](https://github.com/Dev4Lex/Learn-Java-Selenium#jenkins)
 
 ____
 ## Java Core
-<ul>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/JavaCore/src/DataTypes.java">Типы данных</a></li>
-		<li>Массивы </li>
-		<li>Простые операции и логические операторы </li>
-		<li>Условия и множественный выбор</li>
-		<li>Циклы </li>
-		<li>Коллекция List </li>
-		<li>Итератор </li>
-		<li>Коллекция Set</li>
-		<li>Коллекция Map </li>
-		<li>Методы </li>
-		<li>Перегрузка методов </li>
-		<li>Исключения </li>
-		<li>Классы и объекты</li>
-		<li>Конструктор класса </li>
-		<li>Модификаторы Static и Final</li>
-		<li>Принцип ООП Наследование</li>
-		<li>Принцип ООП Инкапсуляция</li>
-		<li>Принцип ООП Полиморфизм</li>
-		<li>Абстрактные классы </li>
-		<li>Интерфейс</li>
-		<li>Создание maven проекта</li>
-</ul>
+
+		-[Типы данных](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/JavaCore/src/DataTypes.java)
+		-Массивы 
+		-Простые операции и логические операторы 
+		-Условия и множественный выбор
+		-Циклы 
+		-Коллекция List 
+		-Итератор 
+		-Коллекция Set
+		-Коллекция Map 
+		-Методы 
+		-Перегрузка методов 
+		-Исключения 
+		-Классы и объекты
+		-Конструктор класса 
+		-Модификаторы Static и Final
+		-Принцип ООП Наследование
+		-Принцип ООП Инкапсуляция
+		-Принцип ООП Полиморфизм
+		-Абстрактные классы 
+		-Интерфейс
+		-Создание maven проекта
+
 ## Selenium WebDriver
 
-<ul>
-		<li>Основы XPath: синтаксис</li>
-		<li>Оси XPath</li>
-		<li>Функции XPath</li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Запуск браузера и базовые настройки</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Неявное ожидание Implicit Wait</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElement.java">Поиск элементов</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Buttons.java">Работа с кнопками</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/TextFields.java">Работа с текстовыми полями</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Links.java">Работа с ссылками</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/CheckboxRadiobutton.java">Работа с чекбоксами и радио кнопками</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/DropDownList.java">Работа с выпадающими списками</li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElements.java">Поиск списка элементов</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Tables.java">Работа с таблицами</a> + <a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Table.java">класс</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ExplicitWait.java">Явные ожидания Explicit Wait</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ComplexActions.java">Выполнение сложных действий</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/JavaScript.java">Выполнение Javascript</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Alert.java">Работа с Alert</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserWindow.java">Работа с окнами браузера</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserTabs.java">Работа с вкладками браузера</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/AvailabilityOfElements.java">Проверка доступности элементов</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ExistenceOfElements.java">Проверка наличия элемента</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SendKeys.java">Имитация нажатия клавиш клавиатуры</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/TakeScreenshot.java">Создание скриншотов с помощью Selenium WebDriver</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FileDownload.java">Загрузка файлов</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SomeBrowsers.java">Запуск тестов в разных браузерах</a></li>
-		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java">Запуск тестов без открытия браузера</a></li>
-</ul>
+
+		-Основы XPath: синтаксис
+		-Оси XPath
+		-Функции XPath
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java)Запуск браузера и базовые настройки
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java)Неявное ожидание Implicit Wait
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElement.java)Поиск элементов
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Buttons.java)Работа с кнопками
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/TextFields.java)Работа с текстовыми полями
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Links.java)Работа с ссылками
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/CheckboxRadiobutton.java)Работа с чекбоксами и радио кнопками
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/DropDownList.java)Работа с выпадающими списками
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElements.java)Поиск списка элементов
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Tables.java)Работа с таблицами + (https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Table.java)класс
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ExplicitWait.java)Явные ожидания Explicit Wait
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ComplexActions.java)Выполнение сложных действий
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/JavaScript.java)Выполнение Javascript
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/Alert.java)Работа с Alert
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserWindow.java)Работа с окнами браузера
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/BrowserTabs.java)Работа с вкладками браузера
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/AvailabilityOfElements.java)Проверка доступности элементов
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/ExistenceOfElements.java)Проверка наличия элемента
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SendKeys.java)Имитация нажатия клавиш клавиатуры
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/TakeScreenshot.java)Создание скриншотов с помощью Selenium WebDriver
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FileDownload.java)Загрузка файлов
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SomeBrowsers.java)Запуск тестов в разных браузерах
+		-[](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java)Запуск тестов без открытия браузера
+
 
 ## Page Object
-<ul>
-<li>Main Page</li>
-<li>Login Page</li>
-<li>Signup Page</li>
-</ul>
+
+-Main Page
+-Login Page
+-Signup Page
+
 
 ## JUnit
 ## TestNG
