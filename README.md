@@ -34,6 +34,7 @@ ____
 		<li>Создание maven проекта</li>
 	</ul>
 ## Selenium WebDriver
+
 <ul>
 		<li>Основы XPath: синтаксис</li>
 		<li>Оси XPath</li>
@@ -61,7 +62,7 @@ ____
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FileDownload.java">Загрузка файлов</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/SomeBrowsers.java">Запуск тестов в разных браузерах</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java">Запуск тестов без открытия браузера</a></li>
-	</ul>
+</ul>
 
 ## Page Object
 <ul>
@@ -69,7 +70,7 @@ ____
 <li>Login Page</li>
 <li>Signup Page</li>
 </ul>
-	
+
 ## JUnit
 ## TestNG
 ## Selenide
