@@ -2,7 +2,6 @@
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
 
 public class Alert {
@@ -10,6 +9,7 @@ public class Alert {
     static WebDriver driver;
 
     public static void main(String[] args) {
+
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver"); //путь до драйвера
 
         driver = new ChromeDriver(); //инициализация драйвера
@@ -38,6 +38,8 @@ public class Alert {
             e.printStackTrace();
         }
         driver.switchTo().alert().accept(); //подтверждение на алерте
+
+        driver.quit();
 
     }
 }

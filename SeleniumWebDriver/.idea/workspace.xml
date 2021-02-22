@@ -51,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -61,51 +61,49 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Alert">
-    <configuration name="Alert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Alert" />
-      <module name="Selenium WebDriver" />
+  <component name="RunManager" selected="Application.RunTestsWithoutBrowser">
+    <configuration name="FileDownload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileDownload" />
+      <module name="test-selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AvailabilityOfElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AvailabilityOfElements" />
-      <module name="testselenium" />
+    <configuration name="RunTestsWithoutBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunTestsWithoutBrowser" />
+      <module name="test-selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserTabs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BrowserTabs" />
-      <module name="testselenium" />
+    <configuration name="SendKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SendKeys" />
+      <module name="test-selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BrowserWindow" />
-      <module name="testselenium" />
+    <configuration name="SomeBrowsers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SomeBrowsers" />
+      <module name="test-selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaScript" />
-      <module name="testselenium" />
+    <configuration name="TakeScreenshot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TakeScreenshot" />
+      <module name="test-selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Alert" />
-        <item itemvalue="Application.AvailabilityOfElements" />
-        <item itemvalue="Application.BrowserTabs" />
-        <item itemvalue="Application.BrowserWindow" />
-        <item itemvalue="Application.JavaScript" />
+        <item itemvalue="Application.RunTestsWithoutBrowser" />
+        <item itemvalue="Application.SomeBrowsers" />
+        <item itemvalue="Application.FileDownload" />
+        <item itemvalue="Application.TakeScreenshot" />
+        <item itemvalue="Application.SendKeys" />
       </list>
     </recent_temporary>
   </component>

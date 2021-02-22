@@ -2,9 +2,7 @@
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
-
 
 public class AvailabilityOfElements {
 
@@ -25,9 +23,6 @@ public class AvailabilityOfElements {
         System.out.println(chb1.isDisplayed()); //проверка отображения элемента на экране
 
 //        if(!chb1.isSelected()) chb1.click();
-
-
-
 
 
     }

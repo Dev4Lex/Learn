@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class DropDownList {
+
     static WebDriver driver;
 
     public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class DropDownList {
 
         //driver.quit(); //завершение работы драйвера
     }
+
     //Метод выбора опции из списка
     public static void selectOption(String listName, String option) {
         String listXpath = String.format("//div[@class='%s']//td[2]", listName);

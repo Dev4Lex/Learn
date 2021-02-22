@@ -3,9 +3,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver; //импорт для работы с драйвером браузера Chrome
 import java.util.concurrent.TimeUnit;
-//import org.openqa.selenium.firefox.FirefoxDriver;  //импорт для работы с драйвером браузера Firefox
 
 public class FirstSteps {
+
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver"); //путь до драйвера
@@ -29,7 +29,6 @@ public class FirstSteps {
         System.out.println(driver.getCurrentUrl()); //получение url страницы
 
         driver.quit(); //завершение работы драйвера
-
 
 
     }
