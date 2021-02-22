@@ -11,7 +11,7 @@ ____
 ____
 ## Java Core
 
-- [Типы данных](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/JavaCore/src/DataTypes.java)
+- Типы данных
 - Массивы 
 - Простые операции и логические операторы 
 - Условия и множественный выбор
