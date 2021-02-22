@@ -1,12 +1,12 @@
 # RoadMap
 ____
-<br>## Java Core
-<br>## Selenium WebDriver
-<br>## Page Object
-<br>## JUnit
-<br>## TestNG
-<br>## Selenide
-<br>## Jenkins
+## Java Core
+## Selenium WebDriver
+## Page Object
+## JUnit
+## TestNG
+## Selenide
+## Jenkins
 
 ____
 <br>#Java Core
@@ -35,9 +35,9 @@ ____
 	</ul>
 <br>#Selenium WebDriver
 <ul>
-		<li>:white_check_mark:  Основы XPath: синтаксис</li>
-		<li>:white_check_mark:  Оси XPath</li>
-		<li>:white_check_mark:  Функции XPath</li>
+		<li>Основы XPath: синтаксис</li>
+		<li>Оси XPath</li>
+		<li>Функции XPath</li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Запуск браузера и базовые настройки</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FirstSteps.java">Неявное ожидание Implicit Wait</a></li>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/FindElement.java">Поиск элементов</a></li>
