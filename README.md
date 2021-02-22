@@ -9,7 +9,7 @@ ____
 ## Jenkins
 
 ____
-<br>#Java Core
+## Java Core
 	<ul>
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/JavaCore/src/DataTypes.java">Типы данных</a></li>
 		<li>Массивы </li>
@@ -33,7 +33,7 @@ ____
 		<li>Интерфейс</li>
 		<li>Создание maven проекта</li>
 	</ul>
-<br>#Selenium WebDriver
+## Selenium WebDriver
 <ul>
 		<li>Основы XPath: синтаксис</li>
 		<li>Оси XPath</li>
@@ -63,13 +63,14 @@ ____
 		<li><a href="https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java">Запуск тестов без открытия браузера</a></li>
 	</ul>
 
-<br>#Page Object
+## Page Object
 <ul>
 <li>Main Page</li>
 <li>Login Page</li>
 <li>Signup Page</li>
-</ul>	
-<br>#JUnit
-<br>#TestNG
-<br>#Selenide
-<br>#Jenkins
+</ul>
+	
+## JUnit
+## TestNG
+## Selenide
+## Jenkins
