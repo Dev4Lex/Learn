@@ -2,7 +2,7 @@
 ____
 - [Java Core](https://github.com/Dev4Lex/Learn-Java-Selenium#java-core)
 - [Selenium WebDriver](https://github.com/Dev4Lex/Learn-Java-Selenium#selenium-webdriver)
-- [Page Object(+ Page Factory)](https://github.com/Dev4Lex/Learn-Java-Selenium#page-object)
+- [Page Object (+Page Factory)](https://github.com/Dev4Lex/Learn-Java-Selenium#page-object)
 - [JUnit](https://github.com/Dev4Lex/Learn-Java-Selenium#junit)
 - [TestNG](https://github.com/Dev4Lex/Learn-Java-Selenium#testng)
 - [Selenide](https://github.com/Dev4Lex/Learn-Java-Selenium#selenide)
@@ -62,7 +62,7 @@ ____
 - [Запуск тестов без открытия браузера](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/SeleniumWebDriver/src/main/java/RunTestsWithoutBrowser.java)
 
 
-## Page Object (+ Page Factory)
+## Page Object (+Page Factory)
 
 - [Main Page](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/PageObject/src/main/java/MainPage.java)
 - [Login Page](https://github.com/Dev4Lex/Learn-Java-Selenium/blob/main/PageObject/src/main/java/LoginPage.java)
