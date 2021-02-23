@@ -2,7 +2,7 @@
 ____
 - [Java Core](https://github.com/Dev4Lex/Learn-Java-Selenium#java-core)
 - [Selenium WebDriver](https://github.com/Dev4Lex/Learn-Java-Selenium#selenium-webdriver)
-- [Page Object (+Page Factory)](https://github.com/Dev4Lex/Learn-Java-Selenium#page-object)
+- [Page Object (+Page Factory)](https://github.com/Dev4Lex/Learn-Java-Selenium#page-object-page-factory)
 - [JUnit](https://github.com/Dev4Lex/Learn-Java-Selenium#junit)
 - [TestNG](https://github.com/Dev4Lex/Learn-Java-Selenium#testng)
 - [Selenide](https://github.com/Dev4Lex/Learn-Java-Selenium#selenide)
