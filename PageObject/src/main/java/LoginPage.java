@@ -1,5 +1,6 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
 
@@ -9,41 +10,51 @@ public class LoginPage {
 
         this.driver = driver;
     }
+    @FindBy(xpath = "//input[@id='login_field']")
+    private WebElement loginField;
 
-    private By loginField = By.xpath("//input[@id='login_field']");
-    private By passwordField = By.xpath("//input[@id='password']");
-    private By signInButton = By.xpath("//input[@value='Sign in']");
-    private By heading = By.xpath("//h1");
-    private By error = By.xpath("//div[@class='container-lg px-2']/button[@aria-label='Dismiss this message']");
-    private By createAccLink = By.xpath("//a[text()='Create an account']");
+    @FindBy(xpath = "//input[@id='password']")
+    private WebElement passwordField;
+
+    @FindBy(xpath = "//input[@value='Sign in']")
+    private WebElement signInButton;
+
+    @FindBy(xpath = "//h1")
+    private WebElement heading;
+
+    @FindBy(xpath = "//div[@class='container-lg px-2']/button[@aria-label='Dismiss this message']")
+    private WebElement error;
+
+    @FindBy(xpath = "//a[text()='Create an account']")
+    private WebElement createAccLink;
 
     public LoginPage typeUsername(String username) {
-        driver.findElement(loginField).sendKeys((username));
+        loginField.sendKeys(username);
         return this;
     }
 
     public LoginPage typePassword(String password) {
-        driver.findElement(passwordField).sendKeys((password));
+        passwordField.sendKeys(password);
         return this;
     }
 
     public LoginPage loginWithInvalidCreds(String username, String password) {
         this.typeUsername(username);
         this.typePassword(password);
-        driver.findElement(signInButton).click();
+        signInButton.click();
         return new LoginPage(driver);
     }
 
     public String getHeadingText () {
-        return driver.findElement(heading).getText();
+        return heading.getText();
     }
 
     public String getErrorText(){
-        return driver.findElement(error).getText();
+        return error.getText();
     }
 
     public SignUpPage createAccount() {
-        driver.findElement(createAccLink).click();
+        createAccLink.click();
         return new SignUpPage(driver);
     }
 }
