@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,33 +10,31 @@ public class SignUpPage {
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
     }
-    @FindBy(xpath = "//div[text()='Join GitHub']")
-    private WebElement heading;
 
-    @FindBy(xpath = "//input[@id='user_login']")
-    private WebElement userNameField;
+    private By headingSignUp = By.xpath("//h1[text()='Create your account']");
 
-    @FindBy(xpath = "//input[@id='user_email']")
-    private WebElement userEmailField;
 
-    @FindBy(xpath = "//input[@id='user_password']")
-    private WebElement userPasswordField;
+    private By userNameField = By.xpath("//input[@id='user_login']");
 
-    @FindBy(xpath = "//button[@id='signup_button']")
-    private WebElement signUpButton;
+
+    private By userEmailField = By.xpath("//input[@id='user_email']");
+
+    private By userPasswordField = By.xpath("//input[@id='user_password']");
+
+    private By signUpButton = By.xpath("//button[@id='signup_button']");
 
     public SignUpPage typeUserName(String username){
-        userNameField.sendKeys(username);
+        driver.findElement(userNameField).sendKeys(username);
         return this;
     }
 
     public SignUpPage typePassword(String password){
-        userPasswordField.sendKeys(password);
+        driver.findElement(userPasswordField).sendKeys(password);
         return this;
     }
 
     public SignUpPage typeEmail(String email){
-        userEmailField.sendKeys(email);
+        driver.findElement(userEmailField).sendKeys(email);
         return this;
     }
 
@@ -43,7 +42,11 @@ public class SignUpPage {
         this.typeUserName(username);
         this.typeEmail(email);
         this.typePassword(password);
-        signUpButton.click();
+        driver.findElement(signUpButton).click();
         return new SignUpPage(driver);
+    }
+
+    public String getHeading () {
+       return  driver.findElement(headingSignUp).getText();
     }
 }

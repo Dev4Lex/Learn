@@ -23,6 +23,10 @@ public class MainClass {
 
         mainPage.register("test@test.com");
 
+
+
+
+
         driver.quit();
     }
 }

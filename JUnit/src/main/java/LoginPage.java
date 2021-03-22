@@ -1,60 +1,55 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+
 
 public class LoginPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public LoginPage(WebDriver driver) {
 
         this.driver = driver;
     }
-    @FindBy(xpath = "//input[@id='login_field']")
-    private WebElement loginField;
+    private By loginField = By.xpath ("//input[@id='login_field']");
 
-    @FindBy(xpath = "//input[@id='password']")
-    private WebElement passwordField;
+    private By passwordField= By.xpath ("//input[@id='password']");
 
-    @FindBy(xpath = "//input[@value='Sign in']")
-    private WebElement signInButton;
+    private By signInButton = By.xpath("//input[@value='Sign in']");
 
-    @FindBy(xpath = "//h1")
-    private WebElement heading;
+    private By headingLoginPage = By.xpath("//h1");
 
-    @FindBy(xpath = "//div[@class='container-lg px-2']/button[@aria-label='Dismiss this message']")
-    private WebElement error;
+    private By error = By.xpath("//div[@class='container-lg px-2']/button[@aria-label='Dismiss this message']");
 
-    @FindBy(xpath = "//a[text()='Create an account']")
-    private WebElement createAccLink;
+    private By createAccLink = By.xpath("//a[text()='Create an account']");
 
     public LoginPage typeUsername(String username) {
-        loginField.sendKeys(username);
+        driver.findElement(loginField).sendKeys(username);
         return this;
     }
 
     public LoginPage typePassword(String password) {
-        passwordField.sendKeys(password);
+        driver.findElement(passwordField).sendKeys(password);
         return this;
     }
 
     public LoginPage loginWithInvalidCreds(String username, String password) {
         this.typeUsername(username);
         this.typePassword(password);
-        signInButton.click();
+        driver.findElement(signInButton).click();
         return new LoginPage(driver);
     }
 
     public String getHeadingText () {
-        return heading.getText();
+       return driver.findElement(headingLoginPage).getText();
     }
 
     public String getErrorText(){
-        return error.getText();
+        return driver.findElement(error).getText();
     }
 
     public SignUpPage createAccount() {
-        createAccLink.click();
+        driver.findElement(createAccLink).click();
         return new SignUpPage(driver);
     }
 }
