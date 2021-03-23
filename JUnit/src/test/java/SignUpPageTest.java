@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,12 @@ public class SignUpPageTest {
     }
 
     @Test
+    public void signUpWithShortPass(){
+        SignUpPage sp = signUpPage.typePassword("qwe");
+        String error = sp.getPasswordErrorText();
+        Assert.assertEquals("Password is too short (minimum is 8 characters), needs at least 1 number, and is in a list of passwords commonly used on other websites", error);
+
+    }
 
     @After
     public void tearDown(){

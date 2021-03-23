@@ -23,6 +23,8 @@ public class SignUpPage {
 
     private By signUpButton = By.xpath("//button[@id='signup_button']");
 
+    private By passwordError = By.xpath("//dd[@class='error']");
+
     public SignUpPage typeUserName(String username){
         driver.findElement(userNameField).sendKeys(username);
         return this;
@@ -37,6 +39,11 @@ public class SignUpPage {
         driver.findElement(userEmailField).sendKeys(email);
         return this;
     }
+
+    public String getPasswordErrorText() {
+        return driver.findElement(passwordError).getText();
+    }
+
 
     public SignUpPage registerWithValidCreds(String username, String email, String password){
         this.typeUserName(username);
