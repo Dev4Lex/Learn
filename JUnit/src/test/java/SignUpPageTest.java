@@ -13,7 +13,7 @@ public class SignUpPageTest {
     private SignUpPage signUpPage;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -23,7 +23,7 @@ public class SignUpPageTest {
     }
 
     @Test
-    public void signUpWithShortPass(){
+    public void signUpWithShortPass() {
         SignUpPage sp = signUpPage.typePassword("qwe");
         String error = sp.getPasswordErrorText();
         Assert.assertEquals("Password is too short (minimum is 8 characters), needs at least 1 number, and is in a list of passwords commonly used on other websites", error);
@@ -31,7 +31,7 @@ public class SignUpPageTest {
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 }
