@@ -29,6 +29,19 @@ public class LoginPageTest {
         Assert.assertEquals("Incorrect username or password.", error);
     }
 
+    @Test
+    public void loginWithIncorrectCredsTest(){
+        LoginPage newLoginPage = loginPage.loginWithInvalidCreds("qweqwe","1234");
+        String error = newLoginPage.getErrorText();
+        Assert.assertEquals("Incorrect username or password.", error);
+    }
+
+    @Test
+    public void createAccTest(){
+        SignUpPage signUpPage = loginPage.createAccount();
+        String heading = signUpPage.getHeading();
+        Assert.assertEquals("Create your account", heading);
+    }
 
 
     @After
