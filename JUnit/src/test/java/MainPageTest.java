@@ -27,7 +27,7 @@ public class MainPageTest {
     public void signUpTest(){
         SignUpPage signUpPage = mainPage.clickSignUpFormButton();
         String heading = signUpPage.getHeading();
-        Assert.assertEquals("Join GitHub", heading);
+        Assert.assertEquals("Create your account", heading);
     }
 
     @Test
