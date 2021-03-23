@@ -17,6 +17,7 @@ public class SignUpPage {
     private By userPasswordField = By.xpath("//input[@id='user_password']");
     private By signUpButton = By.xpath("//button[@id='signup_button']");
     private By passwordError = By.xpath("//dd[@class='error']");
+    private By usernameError = By.xpath("//div[@class='mb-1 ']");
 
     public SignUpPage typeUserName(String username) {
         driver.findElement(userNameField).sendKeys(username);
@@ -35,6 +36,10 @@ public class SignUpPage {
 
     public String getPasswordErrorText() {
         return driver.findElement(passwordError).getText();
+    }
+
+    public String getUsernameErrorText() {
+        return driver.findElement(usernameError).getText();
     }
 
 

@@ -30,6 +30,13 @@ public class SignUpPageTest {
 
     }
 
+    @Test
+    public void signUpReservedUsernameTest(){
+        SignUpPage sp = signUpPage.typeUserName("username");
+        String error = sp.getUsernameErrorText();
+        Assert.assertEquals("Username 'username' is unavailable.", error);
+    }
+
     @After
     public void tearDown() {
         driver.quit();
