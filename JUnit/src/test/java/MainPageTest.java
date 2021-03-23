@@ -23,12 +23,12 @@ public class MainPageTest {
         mainPage = new MainPage(driver);
     }
 
-//    @Test
-//    public void signUpTest(){
-//        SignUpPage signUpPage = mainPage.clickSignUpFormButton();
-//        String heading = signUpPage.getHeading();
-//        Assert.assertEquals("Join GitHub", heading);
-//    }
+    @Test
+    public void signUpTest(){
+        SignUpPage signUpPage = mainPage.clickSignUpFormButton();
+        String heading = signUpPage.getHeading();
+        Assert.assertEquals("Join GitHub", heading);
+    }
 
     @Test
     public void registerFailTest(){
