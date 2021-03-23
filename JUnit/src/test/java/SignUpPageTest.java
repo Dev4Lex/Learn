@@ -37,6 +37,12 @@ public class SignUpPageTest {
         Assert.assertEquals("Username 'username' is unavailable.", error);
     }
 
+    @Test
+    public void getHeadingTest(){
+        String heading = signUpPage.getHeading();
+        Assert.assertEquals("Create your account", heading);
+    }
+
     @After
     public void tearDown() {
         driver.quit();
