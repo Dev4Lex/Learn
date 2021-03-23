@@ -11,16 +11,12 @@ public class LoginPage {
 
         this.driver = driver;
     }
-    private By loginField = By.xpath ("//input[@id='login_field']");
 
-    private By passwordField= By.xpath ("//input[@id='password']");
-
+    private By loginField = By.xpath("//input[@id='login_field']");
+    private By passwordField = By.xpath("//input[@id='password']");
     private By signInButton = By.xpath("//input[@value='Sign in']");
-
     private By headingLoginPage = By.xpath("//h1");
-
     private By error = By.xpath("//div[@class='container-lg px-2']/button[@aria-label='Dismiss this message']");
-
     private By createAccLink = By.xpath("//a[text()='Create an account']");
 
     public LoginPage typeUsername(String username) {
@@ -40,11 +36,11 @@ public class LoginPage {
         return new LoginPage(driver);
     }
 
-    public String getHeadingText () {
-       return driver.findElement(headingLoginPage).getText();
+    public String getHeadingText() {
+        return driver.findElement(headingLoginPage).getText();
     }
 
-    public String getErrorText(){
+    public String getErrorText() {
         return driver.findElement(error).getText();
     }
 

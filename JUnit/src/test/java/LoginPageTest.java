@@ -1,4 +1,7 @@
+import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageTest {
 
     private WebDriver driver;
-    private MainPage mainPage;
+    private LoginPage loginPage;
 
     @Before
     public void setUp(){
@@ -15,9 +18,22 @@ public class LoginPageTest {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("https://github.com/");
-        mainPage = new MainPage(driver);
+        driver.get("https://github.com/login");
+        loginPage = new LoginPage(driver);
     }
 
-    
+    @Test
+    public void loginWithEmptyCredsTest(){
+        LoginPage newLoginPage = loginPage.loginWithInvalidCreds("","");
+        String error = newLoginPage.getErrorText();
+        Assert.assertEquals("Incorrect username or password.", error);
+    }
+
+
+
+    @After
+    public void tearDown(){
+        driver.quit();
+    }
+
 }
