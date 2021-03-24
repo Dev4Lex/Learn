@@ -4,7 +4,6 @@ ____
 - [Selenium WebDriver](https://github.com/Dev4Lex/Learn#selenium-webdriver)
 - [Page Object (+Page Factory)](https://github.com/Dev4Lex/Learn#page-object-page-factory)
 - [JUnit](https://github.com/Dev4Lex/Learn#junit)
-- [TestNG](https://github.com/Dev4Lex/Learn#testng)
 - [Selenide](https://github.com/Dev4Lex/Learn#selenide)
 - [Jenkins](https://github.com/Dev4Lex/Learn#jenkins)
 
@@ -73,6 +72,5 @@ ____
 - [Main Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/MainPageTest.java)
 - [Login Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/LoginPageTest.java)
 - [Signup Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/SignUpPageTest.java)
-## TestNG
 ## Selenide
 ## Jenkins
