@@ -22,9 +22,9 @@ public class SignUpPage {
     By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
     By registerButton = By.xpath("//button[@type='submit']");
     By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
-    String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
+    String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='%s']";
     By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
-    String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()=$s']";
+    String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='$s']";
 
 
 }
