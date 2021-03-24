@@ -21,7 +21,10 @@ public class SignUpPage {
     By thirdPartyCheckbox = By.xpath("//input[@name='thirdParty']");
     By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
     By registerButton = By.xpath("//button[@type='submit']");
-    By emailError = By.xpath("//span[text()='Введите адрес электронной почты.']");
+    By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
+    String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
+    By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
+    String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()=$s']";
 
 
 }
