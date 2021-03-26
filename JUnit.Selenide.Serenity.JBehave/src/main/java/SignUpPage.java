@@ -8,29 +8,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static java.lang.String.format;
 
 public class SignUpPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     public SignUpPage(WebDriver driver){
         this.driver = driver;
     }
 
-    By emailField = By.xpath("//input[@name='email']");
-    By confirmEmailField = By.xpath("//input[@name='confirm']");
-    By passwordField = By.xpath("//input[@id='password']");
-    By nameField = By.xpath("//input[@id='displayname']");
-    By monthDropDown = By.xpath("//select[@id='month']");
-    String monthDropDownOption = "//select[@id='month']/option[text()='$s']";
-    By dayField = By.xpath("//input[@id='day']");
-    By yearField = By.xpath("//input[@id='year']");
-    String genderRadioButton = "//div[@class='GenderSelect__FlexRow-v1a8zn-0 eHAjfo']/label/input[@value='$s']";
-    By marketingCheckbox = By.xpath("//input[@name='marketing']");
-    By thirdPartyCheckbox = By.xpath("//input[@name='thirdParty']");
-    By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
-    By registerButton = By.xpath("//button[@type='submit']");
-    By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
-    String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='%s']";
-    By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
-    String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='$s']";
+    private By emailField = By.xpath("//input[@name='email']");
+    private By confirmEmailField = By.xpath("//input[@name='confirm']");
+    private By passwordField = By.xpath("//input[@id='password']");
+    private By nameField = By.xpath("//input[@id='displayname']");
+    private By monthDropDown = By.xpath("//select[@id='month']");
+    private String monthDropDownOption = "//select[@id='month']/option[text()='$s']";
+    private By dayField = By.xpath("//input[@id='day']");
+    private By yearField = By.xpath("//input[@id='year']");
+    private String genderRadioButton = "//div[@class='GenderSelect__FlexRow-v1a8zn-0 eHAjfo']/label/input[@value='$s']";
+    private By marketingCheckbox = By.xpath("//input[@name='marketing']");
+    private By thirdPartyCheckbox = By.xpath("//input[@name='thirdParty']");
+    private By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
+    private By registerButton = By.xpath("//button[@type='submit']");
+    private By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
+    private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='%s']";
+    private By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
+    private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='$s']";
 
     public SignUpPage typeEmail(String email){
         driver.findElement(emailField).sendKeys(email);
