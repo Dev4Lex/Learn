@@ -66,7 +66,7 @@ public class SignUpTest {
                 .typeConfirmEmailField("wrong@test.mail")
                 .typePassword("qweqwe123!")
                 .typeName("Name")
-                .setGender("Мужчина")
+                .setGender("male")
                 .setMarketing(false)
                 .clickSignUpButton();
         Assert.assertEquals(4,page.getErrors().size());
