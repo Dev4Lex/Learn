@@ -2,7 +2,9 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -18,7 +20,12 @@ public class SignUpTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.spotify.com/ru-ru/signup/");
+        driver.findElement(By.xpath("//button[contains(@class,\"mh-close\")]")).click();
+        driver.findElement(By.xpath("//button[contains(@class,\"banner-close-button\")]")).click();
+
+
     }
+
 
     @Test
     public void typeInvalidYear(){
