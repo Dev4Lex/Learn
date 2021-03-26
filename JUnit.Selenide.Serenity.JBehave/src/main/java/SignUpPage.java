@@ -1,5 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static java.lang.String.format;
 
 public class SignUpPage {
     WebDriver driver;
@@ -25,6 +31,75 @@ public class SignUpPage {
     String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='%s']";
     By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
     String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='$s']";
+
+    public SignUpPage typeEmail(String email){
+        driver.findElement(emailField).sendKeys(email);
+        return this;
+    }
+
+    public SignUpPage typeConfirmEmailField(String email){
+        driver.findElement(confirmEmailField).sendKeys(email);
+        return this;
+    }
+
+    public SignUpPage typePassword(String password){
+        driver.findElement(passwordField).sendKeys(password);
+        return this;
+    }
+
+    public SignUpPage typeName(String name){
+        driver.findElement(nameField).sendKeys(name);
+        return this;
+    }
+
+    public SignUpPage setMonth(String month){
+        driver.findElement(monthDropDown).click();
+        new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(format(monthDropDownOption,month)))).click();
+        return this;
+    }
+
+    public SignUpPage typeDay(String day){
+        driver.findElement(dayField).sendKeys(day);
+        return this;
+    }
+
+    public SignUpPage typeYear(String year){
+        driver.findElement(yearField).sendKeys(year);
+        return this;
+    }
+
+    public SignUpPage setGender(String value){
+        driver.findElement(By.xpath(format(genderRadioButton, value))).click();
+        return this;
+    }
+
+    public SignUpPage setMarketing(boolean value){
+        WebElement checkbox = driver.findElement(marketingCheckbox);
+        if (!checkbox.isSelected() == value){
+            checkbox.click();
+        }
+        return this;
+    }
+
+    public SignUpPage setThirdParty(boolean value){
+        WebElement checkbox = driver.findElement(thirdPartyCheckbox);
+        if (!checkbox.isSelected() == value){
+            checkbox.click();
+        }
+        return this;
+    }
+
+    public SignUpPage setConditions(boolean value){
+        WebElement checkbox = driver.findElement(termsConditionsCheckbox);
+        if (!checkbox.isSelected() == value){
+            checkbox.click();
+        }
+        return this;
+    }
+
+    public void clickSignUpButton(){
+        driver.findElement(registerButton).click();
+    }
 
 
 }
