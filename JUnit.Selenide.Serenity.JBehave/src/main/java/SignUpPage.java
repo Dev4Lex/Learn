@@ -5,6 +5,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static java.lang.String.format;
 
 public class SignUpPage {
@@ -28,7 +30,7 @@ public class SignUpPage {
     private By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
     private By registerButton = By.xpath("//button[@type='submit']");
     private By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
-    private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='%s']";
+    private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
     private By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
     private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='$s']";
 
@@ -101,5 +103,25 @@ public class SignUpPage {
         driver.findElement(registerButton).click();
     }
 
+    public List<WebElement> getErrors(){
+        return driver.findElements(errorLabel);
+    }
 
+    public String getErrorByNumber(int number){
+        return getErrors().get(number-1).getText();
+    }
+
+    public boolean isErrorVisible(String message){
+        return driver.findElements(By.xpath(format(errorByText, message))).size()>0
+                && driver.findElements(By.xpath(format(errorByText, message))).get(0).isDisplayed();
+    }
+
+    public String getErrorByEmail(){
+        return driver.findElement(By.xpath(errorByEmail)).getText();
+    }
+
+    public boolean isEmailErrorVisible(String message){
+        return driver.findElements(By.xpath(format(errorByEmail, message))).size()>0
+                && driver.findElements(By.xpath(format(errorByEmail, message))).get(0).isDisplayed();
+    }
 }
