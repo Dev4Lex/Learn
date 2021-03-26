@@ -52,6 +52,20 @@ public class SignUpTest {
         Assert.assertTrue(page.isErrorVisible("Введите пароль."));
     }
 
+    @Test
+    public void typeInvalidValues(){
+        page = new SignUpPage(driver);
+        page.typeEmail("testmail")
+                .typeConfirmEmailField("wrong@test.mail")
+                .typePassword("qweqwe123!")
+                .typeName("Name")
+                .setGender("Мужчина")
+                .setMarketing(false)
+                .clickSignUpButton();
+        Assert.assertEquals(4,page.getErrors().size());
+        Assert.assertEquals("Укажите действительный день месяца.", page.getErrorByNumber(4) );
+    }
+
     @After
     public void tearDown(){
         driver.quit();
