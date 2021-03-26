@@ -40,7 +40,16 @@ public class SignUpTest {
                 .typeName("Testname")
                 .clickSignUpButton();
         Assert.assertTrue(page.isErrorVisible("Адреса электронной почты не совпадают."));
+    }
 
+    @Test
+    public void signUpWithEmptyPassword(){
+        page = new SignUpPage(driver);
+        page.typeEmail("test@mail.test")
+                .typeConfirmEmailField("test@mail.test")
+                .typeName("Testname")
+                .clickSignUpButton();
+        Assert.assertTrue(page.isErrorVisible("Введите пароль."));
     }
 
     @After
