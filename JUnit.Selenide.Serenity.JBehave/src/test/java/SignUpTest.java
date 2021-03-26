@@ -33,7 +33,15 @@ public class SignUpTest {
     }
 
     @Test
-    public void
+    public void typeInvalidEmail(){
+        page = new SignUpPage(driver);
+        page.typeName("test@mail.test")
+                .typeConfirmEmailField("wrong@mail.test")
+                .typeName("Testname")
+                .clickSignUpButton();
+        Assert.assertTrue(page.isErrorVisible("Адреса электронной почты не совпадают."));
+
+    }
 
     @After
     public void tearDown(){
