@@ -1,5 +1,7 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -17,6 +19,21 @@ public class SignUpTest {
         driver.manage().window().maximize();
         driver.get("https://www.spotify.com/ru-ru/signup/");
     }
+
+    @Test
+    public void typeInvalidYear(){
+        page = new SignUpPage(driver);
+        page.setMonth("5")
+                .typeDay("10")
+                .typeYear("85")
+                .setMarketing(true);
+        Assert.assertTrue(page.isErrorVisible("Укажите действительный год."));
+        Assert.assertFalse(page.isErrorVisible("Выберите месяц.")
+                && page.isErrorVisible("Укажите действительный день месяца."));
+    }
+
+    @Test
+    public void
 
     @After
     public void tearDown(){
