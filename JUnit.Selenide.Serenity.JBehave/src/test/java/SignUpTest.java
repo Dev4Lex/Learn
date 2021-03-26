@@ -11,7 +11,6 @@ public class SignUpTest {
 
     @Before
     public void setUp(){
-        System.setProperty();
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
