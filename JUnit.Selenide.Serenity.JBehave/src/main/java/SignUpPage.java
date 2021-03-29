@@ -42,22 +42,22 @@ public class SignUpPage {
     }
 
     public SignUpPage typeEmail(String email){
-        $(emailField).sendKeys(email);
+        $(emailField).setValue(email);
         return this;
     }
 
     public SignUpPage typeConfirmEmailField(String email){
-        $(confirmEmailField).sendKeys(email);
+        $(confirmEmailField).setValue(email);
         return this;
     }
 
     public SignUpPage typePassword(String password){
-        $(passwordField).sendKeys(password);
+        $(passwordField).setValue(password);
         return this;
     }
 
     public SignUpPage typeName(String name){
-        $(nameField).sendKeys(name);
+        $(nameField).setValue(name);
         return this;
     }
 
@@ -68,12 +68,12 @@ public class SignUpPage {
     }
 
     public SignUpPage typeDay(String day){
-        $(dayField).sendKeys(day);
+        $(dayField).setValue(day);
         return this;
     }
 
     public SignUpPage typeYear(String year){
-        $(yearField).sendKeys(year);
+        $(yearField).setValue(year);
         return this;
     }
 
@@ -124,7 +124,7 @@ public class SignUpPage {
     }
 
     public String getErrorByEmail(){
-        return $$(By.xpath(errorByEmail)).getText();
+        return $(By.xpath(errorByEmail)).getText();
     }
 
     public boolean isEmailErrorVisible(String message){
