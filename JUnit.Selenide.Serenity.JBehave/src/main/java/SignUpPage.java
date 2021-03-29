@@ -62,8 +62,8 @@ public class SignUpPage {
     }
 
     public SignUpPage setMonth(String month){
-        $(monthDropDown).click();
-        new WebDriverWait(driver,30).until(visibilityOfElementLocated(By.xpath(String.format(monthDropDownOption, month)))).click();
+        $(monthDropDown).selectOption(month);
+        
         return this;
     }
 
