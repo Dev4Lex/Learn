@@ -27,7 +27,7 @@ public class SignUpPage {
     private String monthDropDownOption = "//option[text()='%s']";
     private By dayField = xpath("//input[@id='day']");
     private By yearField = xpath("//input[@id='year']");
-    private String genderRadioButton = "//input[@name='gender']/following-sibling::span[text()='%s']";
+    private By genderRadioButton = By.xpath("//div[contains(@class,'GenderSelect')]");
     private By marketingCheckbox = xpath("//input[@name='marketing']/following-sibling::span[1]");
     private By thirdPartyCheckbox = xpath("//input[@name='thirdParty']");
     private By termsConditionsCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
@@ -78,7 +78,7 @@ public class SignUpPage {
     }
 
     public SignUpPage setGender(String value) {
-        $(xpath(format(genderRadioButton, value))).selectRadio(value);
+        $(genderRadioButton).selectRadio(value);
         return this;
     }
 
