@@ -28,7 +28,8 @@ public class SignUpTest {
     public void typeInvalidYear(){
         page = new SignUpPage();
         page.getScroll();
-        page.setMonth("Май")
+        page.open()
+                .setMonth("Май")
                 .typeDay("10")
                 .typeYear("85");
         page.getScroll();
@@ -41,7 +42,8 @@ public class SignUpTest {
     @Test
     public void typeInvalidEmail(){
         page = new SignUpPage();
-        page.typeName("test@mail.test")
+        page.open()
+                .typeName("test@mail.test")
                 .typeConfirmEmailField("wrong@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
@@ -51,7 +53,8 @@ public class SignUpTest {
     @Test
     public void signUpWithEmptyPassword(){
         page = new SignUpPage();
-        page.typeEmail("test@mail.test")
+        page.open()
+                .typeEmail("test@mail.test")
                 .typeConfirmEmailField("test@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
@@ -61,9 +64,8 @@ public class SignUpTest {
     @Test
     public void typeInvalidValues(){
         page = new SignUpPage();
-        JavascriptExecutor jse = (JavascriptExecutor)getWebDriver();
-        jse.executeScript("window.scrollBy(0, window.innerHeight)", "");
-        page.typeEmail("testmail")
+        page.open()
+                .typeEmail("testmail")
                 .typeConfirmEmailField("wrong@test.mail")
                 .typePassword("qweqwe123!")
                 .typeName("Name")

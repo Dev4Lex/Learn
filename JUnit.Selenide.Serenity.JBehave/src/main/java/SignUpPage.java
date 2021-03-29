@@ -110,17 +110,15 @@ public class SignUpPage {
     }
 
     public boolean isErrorVisible(String message) {
-        return $$(xpath(format(errorByText, message))).size() > 0
-                && $$(xpath(format(errorByText, message))).get(0).isDisplayed();
+        return $(xpath(format(errorByText, message))).isDisplayed();
     }
 
     public String getErrorByEmail() {
-        return $(xpath(errorByEmail)).getText();
+        return $(xpath(errorByEmail)).text();
     }
 
     public boolean isEmailErrorVisible(String message) {
-        return $$(xpath(format(errorByEmail, message))).size() > 0
-                && $$(xpath(format(errorByEmail, message))).get(0).isDisplayed();
+        return $(xpath(format(errorByEmail, message))).isDisplayed();
     }
 
     public void getScroll() {
