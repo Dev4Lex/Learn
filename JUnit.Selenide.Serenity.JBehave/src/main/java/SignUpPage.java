@@ -87,18 +87,12 @@ public class SignUpPage {
     }
 
     public SignUpPage setThirdParty(boolean value){
-        WebElement checkbox = $(thirdPartyCheckbox);
-        if (!checkbox.isSelected() == value){
-            checkbox.click();
-        }
+        $(thirdPartyCheckbox).setSelected(value);
         return this;
     }
 
     public SignUpPage setConditions(boolean value){
-        WebElement checkbox = $(termsConditionsCheckbox);
-        if (!checkbox.isSelected() == value){
-            checkbox.click();
-        }
+        $(termsConditionsCheckbox).setSelected(value);
         return this;
     }
 
