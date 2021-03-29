@@ -1,5 +1,6 @@
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -109,8 +110,8 @@ public class SignUpPage {
         return getErrors().get(number - 1).text();
     }
 
-    public boolean isErrorVisible(String message) {
-        return $(xpath(format(errorByText, message))).isDisplayed();
+    public SelenideElement getError(String message) {
+        return $(xpath(format(errorByText, message)));
     }
 
     public String getErrorByEmail() {

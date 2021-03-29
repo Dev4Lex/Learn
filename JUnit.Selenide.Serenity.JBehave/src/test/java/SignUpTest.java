@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
 import org.openqa.selenium.By;
@@ -34,9 +35,9 @@ public class SignUpTest {
                 .typeYear("85");
         page.getScroll();
         page.setMarketing(true);
-        Assert.assertTrue(page.isErrorVisible("Укажите действительный год."));
-        Assert.assertFalse(page.isErrorVisible("Выберите месяц.")
-                && page.isErrorVisible("Укажите действительный день месяца."));
+        page.getError("Укажите действительный год.").shouldBe(Condition.visible);
+        page.getError("Выберите месяц.").shouldBe(Condition.visible);
+        page.getError("Укажите действительный день месяца.").shouldBe(Condition.visible);
     }
 
     @Test
