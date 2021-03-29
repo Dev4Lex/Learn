@@ -37,6 +37,8 @@ public class SignUpPage {
     private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
     private By errorLabel = xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
     private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='%s']";
+    private By close1 = xpath("//button[contains(@class,'mh-close')]");
+    private By close2 = xpath("//button[contains(@class,'banner-close-button')]");
 
     public SignUpPage open() {
         Selenide.open("/");
@@ -106,8 +108,8 @@ public class SignUpPage {
         return $$(errorLabel);
     }
 
-    public String getErrorByNumber(int number) {
-        return getErrors().get(number - 1).text();
+    public SelenideElement getErrorByNumber(int number) {
+        return getErrors().get(number - 1);
     }
 
     public SelenideElement getError(String message) {
@@ -125,5 +127,10 @@ public class SignUpPage {
     public void getScroll() {
         JavascriptExecutor jse = (JavascriptExecutor) getWebDriver();
         jse.executeScript("window.scrollBy(0, window.innerHeight)", "");
+    }
+
+    public void closeBanners(){
+        $(close1).click();
+        $(close2).click();
     }
 }

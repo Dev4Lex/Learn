@@ -1,3 +1,4 @@
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
@@ -6,12 +7,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import static com.codeborne.selenide.Selenide.*;
 import java.util.concurrent.TimeUnit;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Configuration.browser;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 
 public class SignUpTest {
     private SignUpPage page;
@@ -21,13 +25,13 @@ public class SignUpTest {
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver");
         baseUrl = "https://www.spotify.com/ru-ru/signup";
         browser = "chrome";
-
     }
 
 
     @Test
     public void typeInvalidYear(){
         page = new SignUpPage();
+        page.closeBanners();
         page.getScroll();
         page.open()
                 .setMonth("Май")
@@ -43,6 +47,7 @@ public class SignUpTest {
     @Test
     public void typeInvalidEmail(){
         page = new SignUpPage();
+        page.closeBanners();
         page.open()
                 .typeName("test@mail.test")
                 .typeConfirmEmailField("wrong@mail.test")
@@ -54,8 +59,9 @@ public class SignUpTest {
     @Test
     public void signUpWithEmptyPassword(){
         page = new SignUpPage();
-        page.open()
-                .typeEmail("test@mail.test")
+        page.open();
+        page.closeBanners();
+        page.typeEmail("test@mail.test")
                 .typeConfirmEmailField("test@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
@@ -65,18 +71,20 @@ public class SignUpTest {
     @Test
     public void typeInvalidValues(){
         page = new SignUpPage();
-        page.open()
-                .typeEmail("testmail")
+        page.open();
+        page.closeBanners();
+        page.typeEmail("testmail")
                 .typeConfirmEmailField("wrong@test.mail")
                 .typePassword("qweqwe123!")
                 .typeName("Name")
                 .getScroll();
-        page.setGender("Мужчина");
+        page.setGender("Male");
         page.getScroll();
         page.setMarketing(false);
         page.clickSignUpButton();
-        Assert.assertEquals(7,page.getErrors().size());
-        Assert.assertEquals("Выберите месяц.", page.getErrorByNumber(4) );
+
+        page.getErrors().shouldHave(CollectionCondition.size(7));
+        page.getErrorByNumber(4).shouldHave(text("Выберите месяц."));
     }
 
 }
