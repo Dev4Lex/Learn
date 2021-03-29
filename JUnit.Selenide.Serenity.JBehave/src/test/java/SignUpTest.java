@@ -48,7 +48,7 @@ public class SignUpTest {
                 .typeConfirmEmailField("wrong@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
-        Assert.assertTrue(page.isErrorVisible("Адреса электронной почты не совпадают."));
+        page.getError("Адреса электронной почты не совпадают.").shouldBe(Condition.visible);
     }
 
     @Test
@@ -59,7 +59,7 @@ public class SignUpTest {
                 .typeConfirmEmailField("test@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
-        Assert.assertTrue(page.isErrorVisible("Введите пароль."));
+        page.getError("Введите пароль.").shouldBe(Condition.visible);
     }
 
     @Test
