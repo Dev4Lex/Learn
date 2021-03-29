@@ -1,7 +1,4 @@
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,19 +7,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Configuration.browser;
+
 public class SignUpTest {
-    private WebDriver driver;
     private SignUpPage page;
 
-    @Before
-    public void setUp(){
+    @BeforeClass
+    public static void setUp(){
         System.setProperty("webdriver.chrome.driver", "/Users/alexs/Desktop/git/Learn/SeleniumWebDriver/drivers/chromedriver");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get("https://www.spotify.com/ru-ru/signup/");
-        driver.findElement(By.xpath("//button[contains(@class,\"mh-close\")]")).click();
-        driver.findElement(By.xpath("//button[contains(@class,\"banner-close-button\")]")).click();
+        baseUrl = "https://www.spotify.com/ru-ru/signup/";
+        browser = "chrome";
+
     }
 
 
@@ -77,9 +73,5 @@ public class SignUpTest {
         Assert.assertEquals(7,page.getErrors().size());
         Assert.assertEquals("Выберите месяц.", page.getErrorByNumber(4) );
     }
-
-    @After
-    public void tearDown(){
-        driver.quit();
-    }
+    
 }
