@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,11 +13,6 @@ import static java.lang.String.format;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class SignUpPage {
-    private WebDriver driver;
-
-    public SignUpPage(WebDriver driver){
-        this.driver = driver;
-    }
 
     private By emailField = By.xpath("//input[@name='email']");
     private By confirmEmailField = By.xpath("//input[@name='confirm']");
@@ -35,6 +31,11 @@ public class SignUpPage {
     private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
     private By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
     private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='%s']";
+
+    public SignUpPage open() {
+        Selenide.open("/");
+        return this;
+    }
 
     public SignUpPage typeEmail(String email){
         driver.findElement(emailField).sendKeys(email);
