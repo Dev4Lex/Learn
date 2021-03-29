@@ -26,7 +26,7 @@ public class SignUpPage {
     private String monthDropDownOption = "//option[text()='%s']";
     private By dayField = By.xpath("//input[@id='day']");
     private By yearField = By.xpath("//input[@id='year']");
-    private String genderRadioButton = "//div[@class='GenderSelect__FlexRow-v1a8zn-0 eHAjfo']/label/input[@value='%s']";
+    private String genderRadioButton = "//input[@name='gender']/following-sibling::span[text()='%s']";
     private By marketingCheckbox = By.xpath("//input[@name='marketing']/following-sibling::span[1]");
     private By thirdPartyCheckbox = By.xpath("//input[@name='thirdParty']");
     private By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");

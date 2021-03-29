@@ -69,11 +69,13 @@ public class SignUpTest {
                 .typeConfirmEmailField("wrong@test.mail")
                 .typePassword("qweqwe123!")
                 .typeName("Name")
-                .setGender("male")
-                .setMarketing(false)
-                .clickSignUpButton();
-        Assert.assertEquals(4,page.getErrors().size());
-        Assert.assertEquals("Укажите действительный день месяца.", page.getErrorByNumber(4) );
+                .getScroll();
+        page.setGender("Мужчина");
+        page.getScroll();
+        page.setMarketing(false);
+        page.clickSignUpButton();
+        Assert.assertEquals(7,page.getErrors().size());
+        Assert.assertEquals("Выберите месяц.", page.getErrorByNumber(4) );
     }
 
     @After
