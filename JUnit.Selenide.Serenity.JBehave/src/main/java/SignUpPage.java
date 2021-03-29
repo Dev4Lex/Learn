@@ -106,7 +106,7 @@ public class SignUpPage {
     }
 
     public String getErrorByNumber(int number) {
-        return getErrors().get(number - 1).getText();
+        return getErrors().get(number - 1).text();
     }
 
     public boolean isErrorVisible(String message) {
