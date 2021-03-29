@@ -14,26 +14,27 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static java.lang.String.format;
+import static org.openqa.selenium.By.xpath;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class SignUpPage {
 
-    private By emailField = By.xpath("//input[@name='email']");
-    private By confirmEmailField = By.xpath("//input[@name='confirm']");
-    private By passwordField = By.xpath("//input[@id='password']");
-    private By nameField = By.xpath("//input[@id='displayname']");
-    private By monthDropDown = By.xpath("//select[@id='month']");
+    private By emailField = xpath("//input[@name='email']");
+    private By confirmEmailField = xpath("//input[@name='confirm']");
+    private By passwordField = xpath("//input[@id='password']");
+    private By nameField = xpath("//input[@id='displayname']");
+    private By monthDropDown = xpath("//select[@id='month']");
     private String monthDropDownOption = "//option[text()='%s']";
-    private By dayField = By.xpath("//input[@id='day']");
-    private By yearField = By.xpath("//input[@id='year']");
+    private By dayField = xpath("//input[@id='day']");
+    private By yearField = xpath("//input[@id='year']");
     private String genderRadioButton = "//input[@name='gender']/following-sibling::span[text()='%s']";
-    private By marketingCheckbox = By.xpath("//input[@name='marketing']/following-sibling::span[1]");
-    private By thirdPartyCheckbox = By.xpath("//input[@name='thirdParty']");
-    private By termsConditionsCheckbox = By.xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
-    private By registerButton = By.xpath("//button[@type='submit']");
-    private By emailErrorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
+    private By marketingCheckbox = xpath("//input[@name='marketing']/following-sibling::span[1]");
+    private By thirdPartyCheckbox = xpath("//input[@name='thirdParty']");
+    private By termsConditionsCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
+    private By registerButton = xpath("//button[@type='submit']");
+    private By emailErrorLabel = xpath("//div[contains(@class, 'InputErrorMessage')]/span[string-length(text())>0]");
     private String errorByEmail = "//div[contains(@class, 'InputErrorMessage')]/span[text()='Введите адрес электронной почты.']";
-    private By errorLabel = By.xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
+    private By errorLabel = xpath("//div[contains(@class, 'InputErrorMessage') and string-length(text()>0)]");
     private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='%s']";
 
     public SignUpPage open() {
@@ -41,89 +42,89 @@ public class SignUpPage {
         return this;
     }
 
-    public SignUpPage typeEmail(String email){
+    public SignUpPage typeEmail(String email) {
         $(emailField).setValue(email);
         return this;
     }
 
-    public SignUpPage typeConfirmEmailField(String email){
+    public SignUpPage typeConfirmEmailField(String email) {
         $(confirmEmailField).setValue(email);
         return this;
     }
 
-    public SignUpPage typePassword(String password){
+    public SignUpPage typePassword(String password) {
         $(passwordField).setValue(password);
         return this;
     }
 
-    public SignUpPage typeName(String name){
+    public SignUpPage typeName(String name) {
         $(nameField).setValue(name);
         return this;
     }
 
-    public SignUpPage setMonth(String month){
+    public SignUpPage setMonth(String month) {
         $(monthDropDown).selectOption(month);
         return this;
     }
 
-    public SignUpPage typeDay(String day){
+    public SignUpPage typeDay(String day) {
         $(dayField).setValue(day);
         return this;
     }
 
-    public SignUpPage typeYear(String year){
+    public SignUpPage typeYear(String year) {
         $(yearField).setValue(year);
         return this;
     }
 
-    public SignUpPage setGender(String value){
-        $(By.xpath(format(genderRadioButton, value))).click();
+    public SignUpPage setGender(String value) {
+        $(xpath(format(genderRadioButton, value))).selectRadio(value);
         return this;
     }
 
-    public SignUpPage setMarketing(boolean value){
+    public SignUpPage setMarketing(boolean value) {
         $(marketingCheckbox).setSelected(value);
         return this;
     }
 
-    public SignUpPage setThirdParty(boolean value){
+    public SignUpPage setThirdParty(boolean value) {
         $(thirdPartyCheckbox).setSelected(value);
         return this;
     }
 
-    public SignUpPage setConditions(boolean value){
+    public SignUpPage setConditions(boolean value) {
         $(termsConditionsCheckbox).setSelected(value);
         return this;
     }
 
-    public void clickSignUpButton(){
+    public void clickSignUpButton() {
         $(registerButton).click();
     }
 
-    public ElementsCollection getErrors(){
+    public ElementsCollection getErrors() {
         return $$(errorLabel);
     }
 
-    public String getErrorByNumber(int number){
-        return getErrors().get(number-1).getText();
+    public String getErrorByNumber(int number) {
+        return getErrors().get(number - 1).getText();
     }
 
-    public boolean isErrorVisible(String message){
-        return $$(By.xpath(format(errorByText, message))).size()>0
-                && $$(By.xpath(format(errorByText, message))).get(0).isDisplayed();
+    public boolean isErrorVisible(String message) {
+        return $$(xpath(format(errorByText, message))).size() > 0
+                && $$(xpath(format(errorByText, message))).get(0).isDisplayed();
     }
 
-    public String getErrorByEmail(){
-        return $(By.xpath(errorByEmail)).getText();
+    public String getErrorByEmail() {
+        return $(xpath(errorByEmail)).getText();
     }
 
-    public boolean isEmailErrorVisible(String message){
-        return $$(By.xpath(format(errorByEmail, message))).size()>0
-                && $$(By.xpath(format(errorByEmail, message))).get(0).isDisplayed();
+    public boolean isEmailErrorVisible(String message) {
+        return $$(xpath(format(errorByEmail, message))).size() > 0
+                && $$(xpath(format(errorByEmail, message))).get(0).isDisplayed();
     }
 
-    public void getScroll(){
-        JavascriptExecutor jse = (JavascriptExecutor)getWebDriver();
+    public void getScroll() {
+        JavascriptExecutor jse = (JavascriptExecutor) getWebDriver();
         jse.executeScript("window.scrollBy(0, window.innerHeight)", "");
     }
 }
