@@ -63,7 +63,6 @@ public class SignUpPage {
 
     public SignUpPage setMonth(String month){
         $(monthDropDown).selectOption(month);
-        
         return this;
     }
 
@@ -83,10 +82,7 @@ public class SignUpPage {
     }
 
     public SignUpPage setMarketing(boolean value){
-        WebElement checkbox = $(marketingCheckbox);
-        if (!checkbox.isSelected() == value){
-            checkbox.click();
-        }
+        $(marketingCheckbox).setSelected(value);
         return this;
     }
 
