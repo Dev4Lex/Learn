@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
@@ -75,7 +76,7 @@ public class SignUpPage {
     }
 
     public void setGender(String value) {
-        $(byXpath(genderRadioButton.replace("?",value))).click();
+        $(byXpath(genderRadioButton.replace("?", value))).click();
     }
 
     public void setMarketing() {
@@ -93,6 +94,8 @@ public class SignUpPage {
     }
 
     public void clickSignUpButton() {
+        $(registerButton).waitUntil(Condition.visible, 5000);
+
         $(registerButton).click();
     }
 
@@ -121,7 +124,7 @@ public class SignUpPage {
         jse.executeScript("window.scrollBy(0, window.innerHeight)", "");
     }
 
-    public void closeBanners(){
+    public void closeBanners() {
         $(close1).click();
         $(close2).click();
     }
