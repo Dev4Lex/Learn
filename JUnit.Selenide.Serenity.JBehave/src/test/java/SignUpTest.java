@@ -1,21 +1,13 @@
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import static com.codeborne.selenide.Selenide.*;
-import java.util.concurrent.TimeUnit;
+
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Configuration.browser;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 
 
 public class SignUpTest {
@@ -41,8 +33,6 @@ public class SignUpTest {
         page.getScroll();
         page.setMarketing();
         page.getError("Укажите действительный год.").shouldBe(Condition.visible);
-        //page.getError("Выберите месяц.").shouldBe(Condition.visible);
-        //page.getError("Укажите действительный день месяца.").shouldBe(Condition.visible);
     }
 
     @Test

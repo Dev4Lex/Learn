@@ -3,13 +3,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
 
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
@@ -17,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static java.lang.String.format;
 import static org.openqa.selenium.By.xpath;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class SignUpPage {
 
@@ -29,9 +22,7 @@ public class SignUpPage {
     private String monthDropDownOption = "//option[text()='%s']";
     private By dayField = xpath("//input[@id='day']");
     private By yearField = xpath("//input[@id='year']");
-    //private By genderRadioButton = By.xpath("//div[contains(@class,'GenderSelect')]/label/span[text()]");
     private String genderRadioButton = "//div[contains(@class,'GenderSelect')]/label/span[text()=\"?\"]";
-    //private By marketingCheckbox = xpath("//input[@name='marketing']/following-sibling::span[1]");
     private By marketingCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[7]/label/span[1]");
     private By thirdPartyCheckbox = xpath("//input[@name='thirdParty']");
     private By termsConditionsCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
