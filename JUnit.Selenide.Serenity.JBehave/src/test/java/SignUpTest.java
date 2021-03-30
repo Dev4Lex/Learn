@@ -1,5 +1,6 @@
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
 import org.openqa.selenium.By;
@@ -31,25 +32,25 @@ public class SignUpTest {
     @Test
     public void typeInvalidYear(){
         page = new SignUpPage();
+        page.open();
         page.closeBanners();
         page.getScroll();
-        page.open()
-                .setMonth("Май")
+        page.setMonth("Май")
                 .typeDay("10")
                 .typeYear("85");
         page.getScroll();
-        page.setMarketing(true);
+        page.setMarketing();
         page.getError("Укажите действительный год.").shouldBe(Condition.visible);
-        page.getError("Выберите месяц.").shouldBe(Condition.visible);
-        page.getError("Укажите действительный день месяца.").shouldBe(Condition.visible);
+        //page.getError("Выберите месяц.").shouldBe(Condition.visible);
+        //page.getError("Укажите действительный день месяца.").shouldBe(Condition.visible);
     }
 
     @Test
     public void typeInvalidEmail(){
         page = new SignUpPage();
+        page.open();
         page.closeBanners();
-        page.open()
-                .typeName("test@mail.test")
+        page.typeName("test@mail.test")
                 .typeConfirmEmailField("wrong@mail.test")
                 .typeName("Testname")
                 .clickSignUpButton();
@@ -78,13 +79,18 @@ public class SignUpTest {
                 .typePassword("qweqwe123!")
                 .typeName("Name")
                 .getScroll();
-        page.setGender("Male");
+        page.setGender("Мужчина");
         page.getScroll();
-        page.setMarketing(false);
+        page.setMarketing();
         page.clickSignUpButton();
 
         page.getErrors().shouldHave(CollectionCondition.size(7));
         page.getErrorByNumber(4).shouldHave(text("Выберите месяц."));
+    }
+
+    @After
+    public void closeBrowser(){
+        Selenide.closeWebDriver();
     }
 
 }

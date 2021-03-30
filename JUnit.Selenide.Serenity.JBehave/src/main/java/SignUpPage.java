@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -28,8 +29,10 @@ public class SignUpPage {
     private String monthDropDownOption = "//option[text()='%s']";
     private By dayField = xpath("//input[@id='day']");
     private By yearField = xpath("//input[@id='year']");
-    private By genderRadioButton = By.xpath("//div[contains(@class,'GenderSelect')]");
-    private By marketingCheckbox = xpath("//input[@name='marketing']/following-sibling::span[1]");
+    //private By genderRadioButton = By.xpath("//div[contains(@class,'GenderSelect')]/label/span[text()]");
+    private String genderRadioButton = "//div[contains(@class,'GenderSelect')]/label/span[text()=\"?\"]";
+    //private By marketingCheckbox = xpath("//input[@name='marketing']/following-sibling::span[1]");
+    private By marketingCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[7]/label/span[1]");
     private By thirdPartyCheckbox = xpath("//input[@name='thirdParty']");
     private By termsConditionsCheckbox = xpath("//*[@id=\"__next\"]/main/div[2]/form/div[9]/label/input");
     private By registerButton = xpath("//button[@type='submit']");
@@ -80,14 +83,12 @@ public class SignUpPage {
         return this;
     }
 
-    public SignUpPage setGender(String value) {
-        $(genderRadioButton).selectRadio(value);
-        return this;
+    public void setGender(String value) {
+        $(byXpath(genderRadioButton.replace("?",value))).click();
     }
 
-    public SignUpPage setMarketing(boolean value) {
-        $(marketingCheckbox).setSelected(value);
-        return this;
+    public void setMarketing() {
+        $(marketingCheckbox).click();
     }
 
     public SignUpPage setThirdParty(boolean value) {
