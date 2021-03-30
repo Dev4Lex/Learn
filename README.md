@@ -5,6 +5,8 @@ ____
 - [Page Object (+Page Factory)](https://github.com/Dev4Lex/Learn#page-object-page-factory)
 - [JUnit](https://github.com/Dev4Lex/Learn#junit)
 - [Selenide](https://github.com/Dev4Lex/Learn#selenide)
+- [Serenity](https://github.com/Dev4Lex/Learn#selenide)
+- [JBehave](https://github.com/Dev4Lex/Learn#jbehave)
 - [Jenkins](https://github.com/Dev4Lex/Learn#jenkins)
 
 ____
@@ -73,4 +75,8 @@ ____
 - [Login Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/LoginPageTest.java)
 - [Signup Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/SignUpPageTest.java)
 ## Selenide
+- [SignUpPage](https://github.com/Dev4Lex/Learn/blob/main/JUnit.Selenide/src/main/java/SignUpPage.java)
+- [SignUpTest](https://github.com/Dev4Lex/Learn/blob/main/JUnit.Selenide/src/test/java/SignUpTest.java)
+## Serenity
+## JBehave
 ## Jenkins
