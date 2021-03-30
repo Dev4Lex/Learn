@@ -73,4 +73,7 @@ ____
 - [Login Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/LoginPageTest.java)
 - [Signup Page Test](https://github.com/Dev4Lex/Learn/blob/main/JUnit/src/test/java/SignUpPageTest.java)
 ## Selenide
+- [SignUpTest](https://github.com/Dev4Lex/Learn/blob/main/JUnit.Selenide/src/test/java/SignUpTest.java)
+## Serenity
+##JBehave
 ## Jenkins
