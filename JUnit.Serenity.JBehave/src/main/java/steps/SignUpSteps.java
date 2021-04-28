@@ -6,6 +6,11 @@ import pages.SignUpPage;
 public class SignUpSteps {
     SignUpPage page;
 
+    @Step
+    public void open_signup_page(){
+        page.open();
+    }
+
     @Step("User types email [0]")
     public void type_email(String mail) {
         page.typeEmail(mail);
@@ -55,22 +60,5 @@ public class SignUpSteps {
     public void click_signup() {
         page.clickSignUpButton();
     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

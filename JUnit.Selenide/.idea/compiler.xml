@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JUnit.Selenide" />
+        <module name="JUnit.Selenide.Serenity.JBehave" />
       </profile>
     </annotationProcessing>
   </component>

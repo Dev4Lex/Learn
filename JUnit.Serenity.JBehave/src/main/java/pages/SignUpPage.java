@@ -1,5 +1,8 @@
 package pages;
 
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +14,8 @@ import java.util.List;
 import static java.lang.String.format;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
-public class SignUpPage {
-    private WebDriver driver;
-
-    public SignUpPage(WebDriver driver){
-        this.driver = driver;
-    }
+@DefaultUrl("https://www.spotify.com/ru-ru/signup/")
+public class SignUpPage extends PageObject {
 
     private By emailField = By.xpath("//input[@name='email']");
     private By confirmEmailField = By.xpath("//input[@name='confirm']");
@@ -37,48 +36,48 @@ public class SignUpPage {
     private String errorByText = "//div[contains(@class, 'InputErrorMessage') and text()='%s']";
 
     public SignUpPage typeEmail(String email){
-        driver.findElement(emailField).sendKeys(email);
+        find(emailField).sendKeys(email);
         return this;
     }
 
     public SignUpPage typeConfirmEmailField(String email){
-        driver.findElement(confirmEmailField).sendKeys(email);
+        find(confirmEmailField).sendKeys(email);
         return this;
     }
 
     public SignUpPage typePassword(String password){
-        driver.findElement(passwordField).sendKeys(password);
+        find(passwordField).sendKeys(password);
         return this;
     }
 
     public SignUpPage typeName(String name){
-        driver.findElement(nameField).sendKeys(name);
+        find(nameField).sendKeys(name);
         return this;
     }
 
     public SignUpPage setMonth(String month){
-        driver.findElement(monthDropDown).click();
-        new WebDriverWait(driver,30).until(visibilityOfElementLocated(By.xpath(String.format(monthDropDownOption, month)))).click();
+        find(monthDropDown).click();
+        find(By.xpath(format(monthDropDownOption,month))).waitUntilVisible().click();
         return this;
     }
 
     public SignUpPage typeDay(String day){
-        driver.findElement(dayField).sendKeys(day);
+        find(dayField).sendKeys(day);
         return this;
     }
 
     public SignUpPage typeYear(String year){
-        driver.findElement(yearField).sendKeys(year);
+        find(yearField).sendKeys(year);
         return this;
     }
 
     public SignUpPage setGender(String value){
-        driver.findElement(By.xpath(format(genderRadioButton, value))).click();
+        find(By.xpath(format(genderRadioButton, value))).click();
         return this;
     }
 
     public SignUpPage setMarketing(boolean value){
-        WebElement checkbox = driver.findElement(marketingCheckbox);
+        WebElement checkbox = find(marketingCheckbox);
         if (!checkbox.isSelected() == value){
             checkbox.click();
         }
@@ -86,7 +85,7 @@ public class SignUpPage {
     }
 
     public SignUpPage setThirdParty(boolean value){
-        WebElement checkbox = driver.findElement(thirdPartyCheckbox);
+        WebElement checkbox = find(thirdPartyCheckbox);
         if (!checkbox.isSelected() == value){
             checkbox.click();
         }
@@ -94,7 +93,7 @@ public class SignUpPage {
     }
 
     public SignUpPage setConditions(boolean value){
-        WebElement checkbox = driver.findElement(termsConditionsCheckbox);
+        WebElement checkbox = find(termsConditionsCheckbox);
         if (!checkbox.isSelected() == value){
             checkbox.click();
         }
@@ -102,11 +101,11 @@ public class SignUpPage {
     }
 
     public void clickSignUpButton(){
-        driver.findElement(registerButton).click();
+        find(registerButton).click();
     }
 
-    public List<WebElement> getErrors(){
-        return driver.findElements(errorLabel);
+    public List<WebElementFacade> getErrors(){
+        return findAll(errorLabel);
     }
 
     public String getErrorByNumber(int number){
@@ -114,17 +113,17 @@ public class SignUpPage {
     }
 
     public boolean isErrorVisible(String message){
-        return driver.findElements(By.xpath(format(errorByText, message))).size()>0
-                && driver.findElements(By.xpath(format(errorByText, message))).get(0).isDisplayed();
+        return findAll(By.xpath(format(errorByText, message))).size()>0
+                && findAll(By.xpath(format(errorByText, message))).get(0).isDisplayed();
     }
 
     public String getErrorByEmail(){
-        return driver.findElement(By.xpath(errorByEmail)).getText();
+        return find(By.xpath(errorByEmail)).getText();
     }
 
     public boolean isEmailErrorVisible(String message){
-        return driver.findElements(By.xpath(format(errorByEmail, message))).size()>0
-                && driver.findElements(By.xpath(format(errorByEmail, message))).get(0).isDisplayed();
+        return findAll(By.xpath(format(errorByEmail, message))).size()>0
+                && findAll(By.xpath(format(errorByEmail, message))).get(0).isDisplayed();
     }
 
     public void getScroll(){
